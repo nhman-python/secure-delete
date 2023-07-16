@@ -31,7 +31,7 @@ def secure_delete(file_path, strong=1):
             data = os.urandom(1024)
             size = os.path.getsize(file_path)
             num_loop = size // 1024
-            remaining_bytes = num_loop // 1024
+            remaining_bytes = num_loop % 1024
 
             try:
                 for _ in range(strong):
