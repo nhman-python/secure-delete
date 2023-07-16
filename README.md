@@ -1,7 +1,7 @@
 
    # Secure File Deletion Script
 
-   ![Secure File Deletion Banner](banner.png)
+   ![Secure File Deletion Banner](https://github.com/nhman-python/secure-delete/blob/main/logo.jpeg)
 
    ## Description
 
