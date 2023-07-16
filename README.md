@@ -26,7 +26,7 @@
 
    2. Change to the project directory:
       ```
-      cd secure-file-deletion
+      cd secure-delete
       ```
 
    ## Examples
