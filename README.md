@@ -45,4 +45,3 @@
    ## Credits
 
    - Author: [@github.com/nhman-python](https://github.com/nhman-python)
-   ```
