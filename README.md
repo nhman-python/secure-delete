@@ -33,11 +33,11 @@
 
    Securely delete a file:
    ```shell
-   python3 delete_file_secure.py file.txt 4
+   python3 run.py file.txt 4
    ```
    windows:
    ```shell
-   python delete_file_secure.py file.txt 4
+   python run.py file.txt 4
    ```
 
    ## License
