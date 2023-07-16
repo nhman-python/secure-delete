@@ -33,6 +33,10 @@
 
    Securely delete a file:
    ```shell
+   python3 secure_file_deletion.py file.txt 4
+   ```
+   windows:
+   ```shell
    python secure_file_deletion.py file.txt 4
    ```
 
