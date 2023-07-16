@@ -10,7 +10,7 @@
    ## Usage
 
    ```
-   python secure_file_deletion.py file_path strong
+   python delete_file_secure.py file_path strong
    ```
 
    Arguments:
@@ -33,11 +33,11 @@
 
    Securely delete a file:
    ```shell
-   python3 secure_file_deletion.py file.txt 4
+   python3 delete_file_secure.py file.txt 4
    ```
    windows:
    ```shell
-   python secure_file_deletion.py file.txt 4
+   python delete_file_secure.py file.txt 4
    ```
 
    ## License
