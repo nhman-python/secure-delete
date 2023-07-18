@@ -1,5 +1,8 @@
 import argparse
 import os
+from art import text2art
+
+banner = text2art('secure delete')
 
 
 # ANSI escape sequences for color
@@ -10,15 +13,7 @@ class Colors:
     RESET = '\033[0m'
 
 
-ascii_banner = f"""
-{Colors.RED}                                     _      _      _       
-                                    | |    | |    | |      
-  ___  ___  ___ _   _ _ __ ___    __| | ___| | ___| |_ ___ 
- / __|/ _ \/ __| | | | '__/ _ \  / _` |/ _ \ |/ _ \ __/ _ \\
- \__ \  __/ (__| |_| | | |  __/ | (_| |  __/ |  __/ ||  __/
- |___/\___|\___|\__,_|_|  \___|  \__,_|\___|_|\___|\__\___|
-                                    {Colors.GREEN}write by @github.com/nhman-python{Colors.RESET}
-"""
+ascii_banner = f'{Colors.RED}{banner}{Colors.GREEN}\t\t\t\twrite by @github.com/nhman-python{Colors.RESET}\n'
 print(ascii_banner)
 
 
