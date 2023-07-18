@@ -2,6 +2,7 @@ import argparse
 import os
 from art import text2art
 
+
 class Colors:
     """ANSI escape sequences for color"""
     GREEN = '\033[92m'
@@ -9,7 +10,8 @@ class Colors:
     YELLOW = '\033[93m'
     RESET = '\033[0m'
 
-def secure_delete(file_path, strong=1):
+
+def secure_delete(file_path: str, strong: int = 1) -> None:
     """Securely deletes a file by overwriting it multiple times."""
     if os.path.isfile(file_path):
         q = input(f'{Colors.YELLOW}[?] Are you sure you want to continue? This will delete your file without an '
@@ -23,11 +25,11 @@ def secure_delete(file_path, strong=1):
 
             try:
                 for _ in range(strong):
-                    with open(file_path, 'wb') as f:
+                    with open(file_path, 'wb') as file:
                         for _ in range(num_loop):
-                            f.write(data)
+                            file.write(data)
 
-                        f.write(data[:remaining_bytes])
+                        file.write(data[:remaining_bytes])
 
                 os.remove(file_path)
                 print(f'{Colors.GREEN}[!] The file {file_path} has been securely deleted!{Colors.RESET}')
@@ -40,7 +42,7 @@ def secure_delete(file_path, strong=1):
         print(f'{Colors.RED}[?] The provided path is not a file or does not exist!{Colors.RESET}')
 
 
-def main():
+def main() -> None:
     """Entry point of the script"""
     banner = text2art('secure delete')
     ascii_banner = f'{Colors.RED}{banner}{Colors.GREEN}\t\t\t\twrite by @github.com/nhman-python{Colors.RESET}\n'
